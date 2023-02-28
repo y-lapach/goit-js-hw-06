@@ -6,7 +6,9 @@ textInput.addEventListener('blur', (event) => {
     Number(event.currentTarget.dataset.length)
   ) {
     textInput.classList.add('valid');
+    textInput.classList.remove('invalid');
   } else {
     textInput.classList.add('invalid');
+    textInput.classList.remove('valid');
   }
 });
